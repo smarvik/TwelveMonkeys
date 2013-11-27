@@ -10,11 +10,11 @@
     <name>Twelvemonkeys</name>
 
     <scm>
-        <connection>scm:git:ssh://git@github.com:smarvik/TwelveMonkeys.git</connection>
-        <url>scm:git:git@github.com:smarvik/TwelveMonkeys.git</url>
-        <developerConnection>scm:git:ssh://git@github.com:smarvik/TwelveMonkeys.git</developerConnection>
+        <url>https://github.com/smarvik/TwelveMonkeys</url>
+        <connection>scm:git:git://github.com/smarvik/TwelveMonkeys.git</connection>
+        <developerConnection>scm:git:git@github.com:smarvik/TwelveMonkeys.git</developerConnection>
     </scm>
-  
+
     <modules>
         <module>common</module>
         <module>servlet</module>
