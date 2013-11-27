@@ -9,6 +9,12 @@
     <packaging>pom</packaging>
     <name>Twelvemonkeys</name>
 
+    <scm>
+        <connection>scm:git:git@github.com:smarvik/TwelveMonkeys.git</connection>
+        <url>scm:git:git@github.com:smarvik/TwelveMonkeys.git</url>
+        <developerConnection>scm:git:git@github.com:smarvik/TwelveMonkeys.git</developerConnection>
+    </scm>
+  
     <modules>
         <module>common</module>
         <module>servlet</module>
@@ -204,8 +210,8 @@
 
     <distributionManagement>
         <repository>
-            <id>java.net-m2-repository</id>
-            <url>java-net:/maven2-repository/trunk/repository/</url>
+            <id>ssh-repository</id>
+            <url>scp://maven.mobiletech.no/home/maven/repo</url>
         </repository>
     </distributionManagement>
 
