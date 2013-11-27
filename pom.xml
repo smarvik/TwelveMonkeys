@@ -12,7 +12,7 @@
     <scm>
         <url>https://github.com/smarvik/TwelveMonkeys</url>
         <connection>scm:git:git://github.com/smarvik/TwelveMonkeys.git</connection>
-        <developerConnection>scm:git:git@github.com:smarvik/TwelveMonkeys.git</developerConnection>
+        <developerConnection>scm:git:git://github.com/smarvik/TwelveMonkeys.git</developerConnection>
     </scm>
 
     <modules>
