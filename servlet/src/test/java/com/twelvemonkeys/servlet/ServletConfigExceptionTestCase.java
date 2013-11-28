@@ -74,10 +74,9 @@ public class ServletConfigExceptionTestCase {
     @Test
     public void testThrowCatchGetNullCause() {
         try {
-            throw new ServletConfigException("FooBar!", null);
+            throw new ServletConfigException("FooBar!");
         }
         catch (ServletConfigException e) {
-            assertEquals(null, e.getRootCause()); // Old API
             assertEquals(null, e.getCause());
 
             e.printStackTrace(new PrintWriter(new NullOutputStream()));

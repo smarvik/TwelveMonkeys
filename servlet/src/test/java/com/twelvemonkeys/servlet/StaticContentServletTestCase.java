@@ -42,6 +42,8 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Enumeration;
+import java.util.List;
 
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.*;
@@ -78,7 +80,7 @@ public class StaticContentServletTestCase {
     public void testBadInitNoRoot() throws ServletException {
         StaticContentServlet servlet = new StaticContentServlet();
         ServletConfig config = mock(ServletConfig.class);
-        when(config.getInitParameterNames()).thenReturn(Collections.enumeration(Collections.emptyList()));
+        when(config.getInitParameterNames()).thenReturn(Collections.enumeration(Collections.<String>emptyList()));
 
         servlet.init(config);
     }

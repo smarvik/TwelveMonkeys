@@ -273,7 +273,7 @@ public class ServletConfiguratorTestCase {
 
         ServletConfig config = mock(ServletConfig.class);
         when(config.getServletName()).thenReturn("FooServlet");
-        when(config.getInitParameterNames()).thenReturn(Collections.enumeration(Collections.<Object>emptyList()));
+        when(config.getInitParameterNames()).thenReturn(Collections.enumeration(Collections.<String>emptyList()));
 
         ServletConfigurator.configure(servlet, config);
 
@@ -293,7 +293,7 @@ public class ServletConfiguratorTestCase {
 
         ServletConfig config = mock(ServletConfig.class);
         when(config.getServletName()).thenReturn("FooServlet");
-        when(config.getInitParameterNames()).thenReturn(Collections.enumeration(Collections.<Object>emptyList()));
+        when(config.getInitParameterNames()).thenReturn(Collections.enumeration(Collections.<String>emptyList()));
 
         ServletConfigurator.configure(servlet, config); // Should throw exception
     }
@@ -309,7 +309,7 @@ public class ServletConfiguratorTestCase {
 
         ServletConfig config = mock(ServletConfig.class);
         when(config.getServletName()).thenReturn("FooServlet");
-        when(config.getInitParameterNames()).thenReturn(Collections.enumeration(Collections.<Object>emptyList()));
+        when(config.getInitParameterNames()).thenReturn(Collections.enumeration(Collections.<String>emptyList()));
 
         ServletConfigurator.configure(servlet, config);
 

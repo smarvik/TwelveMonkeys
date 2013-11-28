@@ -10,6 +10,7 @@ import java.io.Serializable;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.*;
+import javax.servlet.descriptor.JspConfigDescriptor;
 
 /**
  * ServletConfigMapAdapterTestCase
@@ -152,6 +153,114 @@ abstract class AbstractServletConfigMapAdapterTest extends MapAbstractTestCase {
 
         public void removeAttribute(String name) {
             throw new UnsupportedOperationException("Method removeAttribute not implemented");
+        }
+
+        public String getContextPath() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public int getEffectiveMajorVersion() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public int getEffectiveMinorVersion() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public boolean setInitParameter(String string, String string1) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public ServletRegistration.Dynamic addServlet(String string, String string1) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public ServletRegistration.Dynamic addServlet(String string, Servlet srvlt) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public ServletRegistration.Dynamic addServlet(String string, Class<? extends Servlet> type) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public <T extends Servlet> T createServlet(Class<T> type) throws ServletException {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public ServletRegistration getServletRegistration(String string) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public Map<String, ? extends ServletRegistration> getServletRegistrations() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public FilterRegistration.Dynamic addFilter(String string, String string1) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public FilterRegistration.Dynamic addFilter(String string, Filter filter) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public FilterRegistration.Dynamic addFilter(String string, Class<? extends Filter> type) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public <T extends Filter> T createFilter(Class<T> type) throws ServletException {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public FilterRegistration getFilterRegistration(String string) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public Map<String, ? extends FilterRegistration> getFilterRegistrations() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public SessionCookieConfig getSessionCookieConfig() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public void setSessionTrackingModes(Set<SessionTrackingMode> set) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public Set<SessionTrackingMode> getDefaultSessionTrackingModes() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public Set<SessionTrackingMode> getEffectiveSessionTrackingModes() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public void addListener(String string) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public <T extends EventListener> void addListener(T t) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public void addListener(Class<? extends EventListener> type) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public <T extends EventListener> T createListener(Class<T> type) throws ServletException {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public JspConfigDescriptor getJspConfigDescriptor() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public ClassLoader getClassLoader() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public void declareRoles(String... strings) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
     }
 
