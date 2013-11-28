@@ -33,6 +33,7 @@ import javax.imageio.spi.IIORegistry;
 import javax.imageio.spi.ServiceRegistry;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
 import java.util.Iterator;
 
 /**
@@ -48,6 +49,7 @@ import java.util.Iterator;
  * @version $Id: IIOProviderContextListener.java,v 1.0 14.02.12 21:53 haraldk Exp$
  * @see javax.imageio.ImageIO#scanForPlugins()
  */
+ @WebListener
 public final class IIOProviderContextListener implements ServletContextListener {
     
     public void contextInitialized(final ServletContextEvent event) {
